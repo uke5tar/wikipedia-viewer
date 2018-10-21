@@ -1,0 +1,103 @@
+#body {
+    background-color: antiquewhite;
+}
+
+#searcharea {
+    padding: 5vw 5vw 3vw 5vw;
+}
+
+h1 {
+    font-family: 'Rock Salt', cursive, Cambria, Georgia, serif !important;
+    padding-bottom: 50px;
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.btn-custom {
+    background-color: #4C7D68;
+    border: 1px solid #4C7D68;
+    color: #FFF9F0;
+}
+
+.btn-custom:hover {
+    background-color: #3f6353;
+    border: 1px solid #3f6353;
+    color: #FFF9F0;
+}
+
+#searchform {
+    width: 300px;
+    margin: auto;
+}
+
+#searchbox {
+    border-color: #4C7D68;
+}
+
+#searchbox::-webkit-input-placeholder {
+    padding-left: 10px;
+}
+
+#searchbox:-ms-input-placeholder {
+    padding-left: 10px;
+}
+
+#searchbox::placeholder {
+    padding-left: 20px;
+}
+
+#search-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 3;
+    color: #999999;
+}
+
+#remove-icon {
+    position: absolute;
+    top: 10px;
+    right: 80px;
+    z-index: 3;
+    color: #999999;
+    cursor: pointer;
+}
+
+#searchresults {
+    padding: 0 10vw 5vw 10vw;
+}
+
+#searchresults header {
+    display: none;
+}
+
+#searchresults article {
+    background-color: #FFFEFD;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+#searchresults article:hover {
+    background-color: #4C7D68;
+    color: white;
+}
+
+#searchresults article a {
+    color: black;
+}
+
+#searchresults article:hover a {
+    color: white;
+}
+
+#searchresults a:hover, #searchresults a:focus {
+    text-decoration: none;
+}
+
+#loadMoreResults {
+    display: none;
+    cursor: pointer;
+}

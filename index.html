@@ -1,0 +1,56 @@
+<!DOCTYPE>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Wikipedia Viewer</title>
+
+        <!-- Bootstrap -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet">
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <!-- jQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+        <script src="script.js" type="text/javascript" defer></script>
+    </head>
+
+    <body id="body">
+
+    <main id="main">
+        <section class="text-center" id="searcharea">
+           <header>
+               <h1>Wikipedia viewer</h1>
+           </header>
+            <h2>Know what you are looking for?</h2>
+            <form id="searchform" class="input-group">
+                <input type="text" name="search" placeholder="Search Wikipedia..." id="searchbox" class="form-control">
+                <i class="glyphicon glyphicon-search" id="search-icon"></i>
+                <i class="glyphicon glyphicon-remove" id="remove-icon"></i>
+                <span class="input-group-btn">
+                    <a class="btn btn-custom" type="button" id="search-btn">Search</a>
+                </span>
+            </form>
+            <br>
+            <h2><u>Don't</u> know what you are looking for?</h2>
+            <div id="random-article">Just
+                <a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">click here</a>  to look at a random article.
+            </div>
+        </section>
+        <!-- input for dynamic search results -->
+        <section id="searchresults">
+            <header><h2>#Searchresults<span id="searchresults-amount"></span></h2></header>
+            <div id="loadMoreResults"><a>Load 10 more results</a></div>
+        </section>
+    </main>
+
+    </body>
+</html>
